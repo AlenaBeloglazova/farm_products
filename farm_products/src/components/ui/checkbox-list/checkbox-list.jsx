@@ -2,10 +2,10 @@ import Checkbox from "/src/components/ui/checkbox/checkbox";
 
 function CheckboxList({
   selectValues, // массив выбранных значений
-  labelComponent, // Компонент для отображения label
+  labelComponent,
   options, // массив с объектами для выбора {title: заголовок, value: значение}
-  name, // имя
-  onChange, // событие при изменении
+  name,
+  onChange,
   isGridList,
   onClickLabel = () => {},
 }) {
