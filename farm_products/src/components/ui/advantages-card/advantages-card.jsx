@@ -1,4 +1,3 @@
-import React from "react";
 import Title, { TitleSize } from "/src/components/ui/title/title";
 
 import { StyledCard, Header, Feature } from "./styles";

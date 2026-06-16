@@ -9,7 +9,7 @@ const VisuallyHiddenInput = styled.input`
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-  
+
 
   &:focus-visible ~ * {
     outline: 1px solid #000000;
@@ -18,3 +18,4 @@ const VisuallyHiddenInput = styled.input`
 `;
 
 export default VisuallyHiddenInput;
+

@@ -86,7 +86,7 @@ function Order({ products }) {
           />
           <PriceLabel>Цена</PriceLabel>
           <PriceValue value={fullPrice} />
-          <Button maxWidth onClick={handleBuyClick}>
+          <Button  style={{ width: '100%', display: 'block' }} onClick={handleBuyClick}>
             Купить
           </Button>
         </Border>

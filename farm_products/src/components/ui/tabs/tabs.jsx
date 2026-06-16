@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { TabButton, Header, Content, TabListItem } from "./styles";
 
 function Tabs({ tabsList = [], maxContentHeiht }) {
@@ -11,13 +11,12 @@ function Tabs({ tabsList = [], maxContentHeiht }) {
           <TabListItem key={`tab${index * 10}`}>
             <TabButton
               $isSelect={selectIndex === index}
-              {...(selectIndex === index
-                ? { as: "span" }
-                : {
-                    onClick: () => {
-                      setSelectIndex(index);
-                    },
-                  })}
+              onClick={() => {
+                if (selectIndex !== index) {
+                  setSelectIndex(index);
+                }
+              }}
+              disabled={selectIndex === index}
             >
               {tab.title}
             </TabButton>

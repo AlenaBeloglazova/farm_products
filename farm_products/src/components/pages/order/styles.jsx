@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { Swiper } from "swiper/react";
 import TextInput from "/src/components/ui/text-input/text-input";
-import checkboxSelect from "/src/assets/checkbox.svg";
 import Price from "/src/components/ui/price/price";
 
 const leftWidth = "353px";
@@ -74,9 +73,11 @@ export const CheckboxLabel = styled.span`
         ? css`
             background-color: #fc9b27;
             border: 1px solid rgba(0, 0, 0, 0.1);
-            background-image: url(${checkboxSelect});
-            background-repeat: no-repeat;
-            background-position: center center;
+            content: "✓";
+            color: white;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
           `
         : css`
             background-color: ${props.theme.backgroundColorGray};
