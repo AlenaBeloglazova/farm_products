@@ -1,18 +1,31 @@
-# React + Vite
+# Фермерские продукты
+Интернет-магазина фермерских продуктов, разработанный на React. Приложение позволяет ознакомиться с преимуществами сервиса, выбрать товары, рассчитать стоимость заказа и оформить доставку.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Функциональность
 
-Currently, two official plugins are available:
+- Просмотр главной страницы с информацией о преимуществах сервиса.
+- Переход на страницу оформления заказа без перезагрузки страницы.
+- Выбор продуктов с помощью чекбоксов.
+- Автоматический расчет общей стоимости выбранных товаров.
+- Ввод адреса доставки.
+- Просмотр карточек товаров в вертикальном слайдере.
+- Оформление заказа с отображением выбранных товаров и итоговой суммы.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Технологии
 
-## React Compiler
+- React
+- React Router
+- Styled Components
+- Swiper
+- JavaScript (ES6+)
+- Vite
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Архитектура проекта
 
-Note: This will impact Vite dev & build performances.
+Проект построен по компонентному подходу:
 
-## Expanding the ESLint configuration
+- **Layout-компоненты** — Header, Footer, PageWrapper.
+- **Page-компоненты** — MainPage, Order.
+- **UI-компоненты** — Button, Checkbox, Price, ProductCard и другие переиспользуемые элементы.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
