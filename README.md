@@ -29,3 +29,4 @@
 - **UI-компоненты** — Button, Checkbox, Price, ProductCard и другие переиспользуемые элементы.
 
 
+Ссылка на Netlify https://celebrated-speculoos-19869e.netlify.app
