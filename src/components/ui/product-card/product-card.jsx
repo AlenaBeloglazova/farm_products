@@ -1,4 +1,3 @@
-import React from "react";
 import Border from "/src/components/ui/border/border";
 import { TitleSize } from "/src/components/ui/title/title";
 import { ProductImage, ProductTitle, Price, ContentWrapper } from "./styles";

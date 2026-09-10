@@ -40,6 +40,8 @@ export const TabButton = styled.button`
 
 export const Header = styled.ul`
   display: flex;
+  margin: 0;
+  padding: 0;
   margin-bottom: 16px;
 `;
 

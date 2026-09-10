@@ -1,4 +1,3 @@
-import React from "react";
 import { Option, Property } from "./styles";
 
 function OptionsList({ list = [], delimiter = ": " }) {
